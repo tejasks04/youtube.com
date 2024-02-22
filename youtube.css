@@ -1,0 +1,64 @@
+.Main-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 15px;
+  row-gap: 40px;
+  margin-top: 20px;
+}
+@media (max-width:750px) {
+  .Main-Grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:751px) and (min-width:999px) {
+  .Main-Grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width:1000px) {
+  .Main-Grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.Info-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 10px;
+}
+.Tumbnile {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Profile {
+  width: 40px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.Title {
+  margin-top: 0px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.Tumbnile-pic {
+  position: relative;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+.video-time {
+  position: absolute;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  right: 5px;
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.733);
+  color: white;
+}
